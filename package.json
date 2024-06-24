@@ -8,6 +8,7 @@
   "dependencies": {
     "@samouraiwallet/varuint-bitcoin": "^2.0.0",
     "axios": "^1.7.2",
+    "bcrpc": "^0.4.0",
     "bip32": "^4.0.0",
     "bip39": "^3.1.0",
     "bitcoinjs-lib": "^6.1.6",

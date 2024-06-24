@@ -1,7 +1,7 @@
 import * as bitcoin from "bitcoinjs-lib";
 import * as ecc from "tiny-secp256k1";
 import ECPairFactory from "ecpair";
-import { witnessStackToScriptWitness } from "./bitcoin_utils/witness_stack_to_script_witness";
+import { witnessStackToScriptWitness } from "./bitcoin/witness_stack_to_script_witness";
 
 const ECPair = ECPairFactory(ecc);
 
@@ -40,6 +40,8 @@ const playerP2wpkh = bitcoin.payments.p2wpkh({
 });
 
 console.log("Player's address:", playerP2wpkh.address);
+// TODO: Query player's balance and check if it's enough to play the game
+// TODO: Display player's balance
 
 // Create the CatCraft game script
 const createCatCraftScript = () => {
