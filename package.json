@@ -1,0 +1,28 @@
+{
+  "name": "catcraft",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "start": "bun run src/index.ts"
+  },
+  "dependencies": {
+    "@samouraiwallet/varuint-bitcoin": "^2.0.0",
+    "axios": "^1.7.2",
+    "bip32": "^4.0.0",
+    "bip39": "^3.1.0",
+    "bitcoinjs-lib": "^6.1.6",
+    "body-parser": "^1.20.2",
+    "buffer": "^6.0.3",
+    "ecpair": "^2.1.0",
+    "express": "^4.19.2",
+    "tiny-secp256k1": "^2.2.3",
+    "typescript": "^5.4.5",
+    "varuint-bitcoin": "^1.1.2"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
