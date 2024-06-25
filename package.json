@@ -3,22 +3,27 @@
   "module": "index.ts",
   "type": "module",
   "scripts": {
-    "start": "bun run src/index.ts"
+    "start": "bun run src/index.ts",
+    "start:auto": "bun run src/index.ts --auto-fund",
+    "start:manual": "bun run src/index.ts"
   },
   "dependencies": {
     "@samouraiwallet/varuint-bitcoin": "^2.0.0",
+    "@types/yargs": "^17.0.32",
     "axios": "^1.7.2",
-    "bcrpc": "^0.4.0",
     "bip32": "^4.0.0",
     "bip39": "^3.1.0",
+    "bitcoin-core": "^4.2.0",
     "bitcoinjs-lib": "^6.1.6",
     "body-parser": "^1.20.2",
     "buffer": "^6.0.3",
+    "dotenv": "^16.4.5",
     "ecpair": "^2.1.0",
     "express": "^4.19.2",
     "tiny-secp256k1": "^2.2.3",
     "typescript": "^5.4.5",
-    "varuint-bitcoin": "^1.1.2"
+    "varuint-bitcoin": "^1.1.2",
+    "yargs": "^17.7.2"
   },
   "devDependencies": {
     "bun-types": "latest"
